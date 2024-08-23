@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="BillBuddy.Modules.ImageProcessing.Views.BillUploadView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BillBuddy.Modules.ImageProcessing.Views"
+             mc:Ignorable="d" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+            <hc:ImageSelector Width="400" Height="800" Margin="16" Filter="(.jpg)|*.jpg|(.png)|*.png|(.tif)|*.tif"
+                              ImageSelected="ImageSelector_ImageSelected"/>
+            
+            
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1" Margin="5" Width="250">
+            <ComboBox ItemsSource="{Binding SupportedLanguages}" 
+                       hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="Language"
+                      Style="{StaticResource ComboBoxExtend}" hc:InfoElement.Placeholder="Language"
+                      SelectedItem="{Binding SelectedLanguage, Mode=OneWayToSource}"/>
+            
+            
+            <Button Content="Next" Margin="5" Style="{StaticResource ButtonPrimary}" Command="{Binding NextPageCommand}"/>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

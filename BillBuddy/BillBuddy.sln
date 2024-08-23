@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BillBuddy", "BillBuddy.csproj", "{F9E8E18E-3B40-497F-8C7E-7DA1EE608F73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{942841DA-ACAB-41B3-BA0E-E2A956883A70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BillBuddy.Modules.ImageProcessing", "..\Modules\BillyBuddy.Modules.ImageProcessing\BillBuddy.Modules.ImageProcessing.csproj", "{B8511002-F5EA-463D-954D-6E1E41FD3C33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BillBuddy.Core", "..\BillBuddy.Core\BillBuddy.Core.csproj", "{263B1360-F5B3-4A6C-B9CF-6F5D54620C0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9E8E18E-3B40-497F-8C7E-7DA1EE608F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9E8E18E-3B40-497F-8C7E-7DA1EE608F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9E8E18E-3B40-497F-8C7E-7DA1EE608F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9E8E18E-3B40-497F-8C7E-7DA1EE608F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8511002-F5EA-463D-954D-6E1E41FD3C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8511002-F5EA-463D-954D-6E1E41FD3C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8511002-F5EA-463D-954D-6E1E41FD3C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8511002-F5EA-463D-954D-6E1E41FD3C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263B1360-F5B3-4A6C-B9CF-6F5D54620C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263B1360-F5B3-4A6C-B9CF-6F5D54620C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263B1360-F5B3-4A6C-B9CF-6F5D54620C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263B1360-F5B3-4A6C-B9CF-6F5D54620C0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8511002-F5EA-463D-954D-6E1E41FD3C33} = {942841DA-ACAB-41B3-BA0E-E2A956883A70}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CAB236A-6B66-4A5C-942D-CE801BA3E258}
+	EndGlobalSection
+EndGlobal
